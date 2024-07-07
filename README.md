@@ -1,5 +1,34 @@
-# Wallpaper Changer Setup Documentation
+<br/>
+<div align="center">
+  <a href="https://github.com/yourusername/auto-wallpaper-changer">
+  </a>
+  <h1 align="center">Auto Wallpaper Changer</h1>
+  <p align="center">
+    Automatically change wallpapers on GNOME desktop in Kali Linux
+    <br/>
+  </p>
+</div>
 
+## 1. About The Project
+Auto Wallpaper Changer is a robust tool designed to automate the process of changing wallpapers on the GNOME desktop environment in Kali Linux. It simplifies the management of desktop backgrounds, offering a seamless rotation feature tailored for users who prefer dynamic visual experiences.
+
+### Key Features
+- **Automated Wallpaper Rotation**: Automatically cycles through a collection of wallpapers at specified intervals.
+- **Customizable Settings**: Configure the directory path where wallpapers are stored (`WALLPAPER_DIR`) and adjust the time interval (`INTERVAL`) between wallpaper changes.
+- **Systemd Integration**: Utilizes systemd to run the wallpaper-changing script as a service, ensuring reliability and persistence across system reboots.
+- **Easy Installation and Setup**: Simple setup process with clear instructions for cloning the repository, configuring the script, and setting up the systemd service.
+- **Monitoring and Troubleshooting**: Built-in commands to check service status (`systemctl status change_wallpaper.service`) and view logs (`journalctl -u change_wallpaper.service`) for easy monitoring and troubleshooting.
+- **User-Friendly Interface**: Includes a centralized dashboard for managing wallpapers, making it accessible for users of all technical levels.
+- **Community Support**: Active community of contributors and users providing bug reports, feature requests, and continuous improvement suggestions.
+
+Enhance your desktop experience with Auto Wallpaper Changer, the go-to solution for dynamic wallpaper management on Kali Linux.
+
+### Built With
+
+- Bash
+- systemd
+- GNOME desktop environment
+  
 ## Table of Contents
 1. [Configure and Prepare the Script](#1-configure-and-prepare-the-script)
 2. [Set Up systemd Service](#2-set-up-systemd-service)
@@ -10,7 +39,6 @@
 4. [Restart the Service](#4-restart-the-service)
 5. [Monitoring and Troubleshooting](#5-monitoring-and-troubleshooting)
 6. [Notes](#6-notes)
-7. [License](#7-license)
 
 ## 1. Configure and Prepare the Script
 
